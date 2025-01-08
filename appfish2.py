@@ -8,7 +8,7 @@ st.title('Fish Species Prediction App')
 st.write("Masukkan panjang, berat, dan rasio panjang terhadap berat untuk memprediksi spesies ikan.")
 
 # Input Form
-length = st.slider('Panjang (cm)', min_value=0.0, format="%.2f")
+length = st.slider('Panjang (cm)', min_value=0.0,max_value=5.0 format="%.2f")
 weight = st.slider('Berat (kg)', min_value=0.0, format="%.2f")
 w_l_ratio = st.slider('Rasio Panjang terhadap Berat', min_value=0.0, format="%.2f")
 
