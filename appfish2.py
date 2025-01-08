@@ -9,8 +9,8 @@ st.write("Masukkan panjang, berat, dan rasio panjang terhadap berat untuk mempre
 
 # Input Form
 length = st.slider('Panjang (cm)', min_value=0.0,max_value=5.0, format="%.2f")
-weight = st.slider('Berat (kg)', min_value=0.0, format="%.2f")
-w_l_ratio = st.slider('Rasio Panjang terhadap Berat', min_value=0.0, format="%.2f")
+weight = st.slider('Berat (kg)', min_value=0.0,max_value=5.0, format="%.2f")
+w_l_ratio = st.slider('Rasio Panjang terhadap Berat', min_value=0.0,max_value=5.0, format="%.2f")
 
 if st.button('Prediksi'):
     if length > 0 and weight > 0 and w_l_ratio > 0:
